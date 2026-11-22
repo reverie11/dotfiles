@@ -19,3 +19,9 @@ vim.opt.colorcolumn = "106"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldmethod = "marker"
 
+vim.filetype.add({ 
+  extension = { tex = 'tex' },
+  pattern = { [".*/tmux/.*%.conf"] = "tmux" },
+})
+
+vim.opt.iskeyword:remove("_")

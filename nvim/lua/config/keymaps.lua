@@ -38,4 +38,3 @@ map({ "v" }, "<Leader>ww", function()
   vim.cmd("normal! gww")
   vim.cmd("normal! 0")
 end, { desc = "Reformat Selected to Fit Textwidth", silent = true })
-
